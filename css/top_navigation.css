@@ -30,6 +30,10 @@ body{
 	padding: 1rem;
 	text-decoration: none;
 	background: white;
+	font-weight: bolder;
+	/* font-weight: bolder adds new line fix */
+	white-space: nowrap;
+	/* end hack */
 }
 /* Top-level */
 .navbar > .navbar-menu >li > a{
