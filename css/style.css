@@ -1,0 +1,111 @@
+/*
+minmax()
+clamp
+calc
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/*outline: 1px dashed black;*/
+	/*justify-content: space-around;*/
+}	
+header div{
+	display: inline;
+	margin: 10px;
+	/*justify-items: stretch;*/
+	/*justify-content: space-between;*/
+	/*outline: 1px dashed pink;*/
+}
+div.logo_and_searchbar{
+	/*display: inline-block;*/
+}
+div.logo_and_searchbar figure{
+	display: inline;
+	/*background-color: green;*/
+	margin-left: 0;
+	margin-right: 0px;
+}
+div.top_links{
+	/*display: flex;*/
+	/*justify-content: center;*/
+}
+div.top_links ul{
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: repeat(3, 1fr);
+}
+div.signin_lightmode_button{
+	display: flex;
+	justify-content: flex-end;
+}
+div.search_form form{
+	display: inline;
+}
+div.search_form input{
+	display: inline;
+}
+div.top_links ul{
+	list-style: none;
+}
+div.top_links ul > li{
+	display: inline-block;
+}
+div.top_link_submenu{
+	display: none;
+}
+div.top_link_submenu div{
+	display: none;
+}
+div.top_link_submenu div:hover,
+div.top_link_submenu div:focus-within{
+	display: block;
+}
+div.top_link_submenu:hover,
+div.top_link_submenu:focus-within{
+	display: block;
+}
+
+div.top_links:has(ul li span):hover div.top_link_submenu{
+	/*opacity: 1;*/
+	display: block;
+}
+
+div.top_links:has(span.courses_hover:hover) div.top_link_submenu div.courses_submenu{
+	display: block;
+	/*opacity: 1;*/
+}
+/*
+div.top_links:hover div.top_link_submenu{
+	display: block;
+}
+*/
+/*
+div.top_links:has(span.courses_hover:hover) div.top_link_submenu div.courses_submenu{
+	display: block;
+}
+*/	
+
+
+/*
+div.top_links:hover div.top_link_submenu{
+	display: block;
+}
+
+div.top_links:has(span:hover) div.top_link_submenu{
+	display: block;
+}
+div.top_links:has(span.courses_hover:hover) div.top_link_submenu div.courses_submenu{
+	display: block;
+}	
+		
+div.top_links:has(span.tutorials_hover:hover) div.top_link_submenu div.tutorials_submenu{
+	display: block;
+}	
+div.top_links:has(span.interview_hover:hover) div.interview_submenu{
+	display: block;
+}
+*/

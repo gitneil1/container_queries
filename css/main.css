@@ -1,0 +1,15 @@
+/* main.css */
+.rotating-caret{
+	/*width: 2rem;*/
+	display: inline-block;
+	/*font-weight: bold;*/
+	transform: scale(2, 1);
+	margin-left: 0.5rem;
+	transition: rotate 0.5s;
+}
+.rotating-caret:hover{
+	rotate: 180deg;
+}
+li:has(.rotating-caret):hover .rotating-caret{
+	rotate: 180deg;
+}
