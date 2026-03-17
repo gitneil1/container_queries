@@ -71,6 +71,7 @@ body{
 	transition:
 	visibility 0s var(--transition-timing-function) var(--transition-timing),
 	opacity var(--transition-timing) var(--transition-timing-function);
+	z-index: 999;
 }
 .navbar-menu ul a{
 	/*color: var(--blue-gray-600);*/
