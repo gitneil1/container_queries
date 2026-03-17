@@ -1,4 +1,7 @@
 /* main.css */
+body{
+	font-family: system-ui;
+}
 .rotating-caret{
 	/*width: 2rem;*/
 	display: inline-block;
@@ -12,4 +15,13 @@
 }
 li:has(.rotating-caret):hover .rotating-caret{
 	rotate: 180deg;
+}
+nav{
+	position: relative;
+}
+nav div ul{
+	display: flex;
+	column-gap: 3rem;
+	place-content: center;
+	list-style-type: none;
 }
