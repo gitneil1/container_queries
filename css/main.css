@@ -25,3 +25,15 @@ nav div ul{
 	place-content: center;
 	list-style-type: none;
 }
+/* main content should be in the center */
+main{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+/* aside should be fixed on the right side */
+main aside{
+	outline: 1px dashed green;
+	width: clamp(0, 195px, 195px);
+	overflow: hidden;
+}
+/* aside should disappear after a certain breakpoint is hit */
