@@ -55,3 +55,11 @@ hr.hr_vertical_spacing{
 nav div a{
 	text-decoration: none;
 }
+footer{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+div.footer_right{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
