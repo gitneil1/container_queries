@@ -120,7 +120,7 @@
 					<button>Toggle lightmode</button>
 				</span>
 				<span>
-					<button>Sign</button>
+					<button id="popupModal">Sign</button>
 				</span>
 			</div>
 		</header>
@@ -266,5 +266,71 @@
 				NilDesigns - All Rights Reserved 2026
 			</div>
 	</div>
+
+	<dialog id="signin_dialog">
+	<div class="modal">
+		<form method="dialog"
+		class="modal-content animate"
+		>
+			<div class="imgcontainer">
+				<span class="close">&times;</span>
+				<img src="img_avatar.png"
+				alt="Avatar"
+				class="avatar"
+				/>
+			</div>
+			<div class="container-form">
+				<label for="username">
+					<strong>Username</strong>
+				</label>
+				<input type="text"
+				name="username"
+				placeholder="Username"
+				required
+				/>
+
+				<label for="psw">
+					<strong>Password</strong>
+				</label>
+				<input type="password"
+				name="password"
+				placeholder="Password"
+				required
+				/>
+
+				<button type="submit">Login</button>
+				<label>
+					<input type="checkbox"
+					name="remember"
+					checked="checked"
+					/>
+				</label>
+				Remember Me
+			</div>
+
+			<div class="container-form"
+			style="background-color: #f1f1f1;" 
+			>
+				<button type="button"
+				onclick="document.getElementById('id01').style.display='none'"
+				class="cancelbtn" 
+				>
+					Cancel
+				</button>
+				<span class="psw">
+					Forgot
+					<a href="#">password?</a>
+				</span>
+			</div>
+		</form>
+	</div>
+	</dialog>
+	<script>
+		const popupModal = document.getElementById("popupModal")
+		const signinDialog = document.getElementById("signin_dialog")
+		popupModal.addEventListener("click", () => {
+			signinDialog.showModal()
+		})
+	</script>
 </body>
 </html>
