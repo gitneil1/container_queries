@@ -79,6 +79,14 @@ input[name="search_string"]{
 	border-radius: 10px;
 	padding: 5px 10px 5px 10px;
 }
+button.signin_button{
+	padding: 0.5em 1em;
+	border-radius: 8px;
+	border: 0;
+	background-color: dimgray;
+	color: white;
+	cursor: pointer;
+}
 /* form styling */
 .modal-content input[type=text], input[type=password]{
 	width: 100%;
