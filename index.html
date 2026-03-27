@@ -272,7 +272,11 @@
 		class="modal-content animate"
 		>
 			<div class="imgcontainer">
-				<span class="close">&times;</span>
+				<span class="close"
+				id="close_dialog" 
+				>
+					&times;
+				</span>
 				<img src="img_avatar.png"
 				alt="Avatar"
 				class="avatar"
@@ -328,6 +332,10 @@
 		const signinDialog = document.getElementById("signin_dialog")
 		popupModal.addEventListener("click", () => {
 			signinDialog.showModal()
+		})
+		const closeButton = document.getElementById("close_dialog")
+		closeButton.addEventListener("click", () => {
+			signinDialog.close()
 		})
 	</script>
 </body>
