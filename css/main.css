@@ -44,6 +44,10 @@ main aside{
 }
 /* aside should disappear after a certain breakpoint is hit */
 
+header{
+	/*background-color: yellowgreen;*/
+	/*width: 100%;*/
+}
 /* header style */
 header.article_header{
 	font-size: 2rem;
@@ -196,3 +200,17 @@ button.signin_button{
 	margin-inline: auto;
 }
 /* end form styling */
+@media(width < 1060px){
+	header{
+		grid-template-columns: 1fr;
+	}
+	div.signin_lightmode_button{
+		justify-content: flex-start;
+	}
+	main aside{
+		display: none;
+	}
+	main{
+		grid-template-columns: 1fr;
+	}
+}
